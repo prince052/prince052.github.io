@@ -16,15 +16,15 @@
   <meta name="author" content="王子">
   <meta name="keywords" content="">
   
-    <meta name="description" content="此博客参考知乎https:&#x2F;&#x2F;www.zhihu.com&#x2F;question&#x2F;24422335&#x2F;answers&#x2F;updated 进行搭建 快速入手  test 本地搭建node环境   安装hexo 1cnpm install -g hexo-cli  安装成功后，使用 hexo init 命令初始化项目： 1hexo init myblog  # 会在当前目录下创建一个myblog目录  创作文章">
+    <meta name="description" content="此博客参考知乎https:&#x2F;&#x2F;www.zhihu.com&#x2F;question&#x2F;24422335&#x2F;answers&#x2F;updated 进行搭建 快速入手安装 安装hexo 1cnpm install -g hexo-cli  安装成功后，使用 hexo init 命令初始化项目： 1hexo init myblog  # 会在当前目录下创建一个myblog目录  创作文章 1hexo new test">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何使用HEXO搭建个人博客">
 <meta property="og:url" content="http://example.com/2022/06/01/hello-world/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="此博客参考知乎https:&#x2F;&#x2F;www.zhihu.com&#x2F;question&#x2F;24422335&#x2F;answers&#x2F;updated 进行搭建 快速入手  test 本地搭建node环境   安装hexo 1cnpm install -g hexo-cli  安装成功后，使用 hexo init 命令初始化项目： 1hexo init myblog  # 会在当前目录下创建一个myblog目录  创作文章">
+<meta property="og:description" content="此博客参考知乎https:&#x2F;&#x2F;www.zhihu.com&#x2F;question&#x2F;24422335&#x2F;answers&#x2F;updated 进行搭建 快速入手安装 安装hexo 1cnpm install -g hexo-cli  安装成功后，使用 hexo init 命令初始化项目： 1hexo init myblog  # 会在当前目录下创建一个myblog目录  创作文章 1hexo new test">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-06-01T08:06:05.877Z">
-<meta property="article:modified_time" content="2022-06-02T11:14:12.119Z">
+<meta property="article:modified_time" content="2022-06-02T11:17:54.392Z">
 <meta property="article:author" content="王子">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -216,7 +216,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          509 字
+          497 字
         
       </span>
     
@@ -270,9 +270,7 @@
             <div class="markdown-body">
               
               <p>此博客参考知乎<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/24422335/answers/updated">https://www.zhihu.com/question/24422335/answers/updated</a> 进行搭建</p>
-<h2 id="快速入手-test"><a href="#快速入手-test" class="headerlink" title="快速入手  test"></a>快速入手  test</h2><ol>
-<li><p>本地搭建node环境 </p>
-</li>
+<h2 id="快速入手"><a href="#快速入手" class="headerlink" title="快速入手"></a>快速入手</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ol start="2">
 <li><p>安装hexo</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">cnpm install -g hexo-cli<br></code></pre></td></tr></table></figure>
 </li>
@@ -298,11 +296,11 @@
 </ol>
    <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">git@github.com:xxxx/xxxx.github.io.git</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">master</span><br></code></pre></td></tr></table></figure>
 
-<ol start="10">
+<ol start="9">
 <li>生成站点文件并推送至远程仓库</li>
 </ol>
-<pre><code class="hljs"><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">hexo clean  # 保险起见，每次我们都清空一下<br>hexo deploy --generate<br></code></pre></td></tr></table></figure>
-</code></pre>
+   <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">hexo clean  # 保险起见，每次我们都清空一下<br>hexo deploy --generate<br></code></pre></td></tr></table></figure>
+
 
               
             </div>
