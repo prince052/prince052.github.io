@@ -24,7 +24,7 @@
 <meta property="og:description" content="此博客参考知乎https:&#x2F;&#x2F;www.zhihu.com&#x2F;question&#x2F;24422335&#x2F;answers&#x2F;updated 进行搭建 快速入手  test 本地搭建node环境   安装hexo 1cnpm install -g hexo-cli  安装成功后，使用 hexo init 命令初始化项目： 1hexo init myblog  # 会在当前目录下创建一个myblog目录  创作文章">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-06-01T08:06:05.877Z">
-<meta property="article:modified_time" content="2022-06-02T09:03:17.914Z">
+<meta property="article:modified_time" content="2022-06-02T11:13:07.591Z">
 <meta property="article:author" content="王子">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -216,7 +216,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          453 字
+          707 字
         
       </span>
     
@@ -227,7 +227,7 @@
         
         
         
-          4 分钟
+          6 分钟
         
       </span>
     
@@ -288,9 +288,21 @@
 <li><p>本地运行</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">cnpm install hexo-server --save<br>hexo server<br></code></pre></td></tr></table></figure>
 </li>
-<li><p>部署到github</p>
+<li><p>创建一个<username>.github.io 的仓库，开启page</p>
+</li>
+<li><p>在blog根目录下安装deployer</p>
+<figure class="highlight plaintext"><figcaption><span>install hexo-deployer-git --save</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cnpm">cnpm install hexo-deployer-git --save<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>修改博客配置（_config.yml）:</p>
 </li>
 </ol>
+   <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">git@github.com:xxxx/xxxx.github.io.git</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">master</span><br></code></pre></td></tr></table></figure>
+
+<ol start="10">
+<li>生成站点文件并推送至远程仓库</li>
+</ol>
+<pre><code class="hljs"><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">hexo clean  # 保险起见，每次我们都清空一下<br>hexo deploy --generate<br></code></pre></td></tr></table></figure>
+</code></pre>
 <h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
